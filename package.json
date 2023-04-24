@@ -5,11 +5,10 @@
   "dependencies": {
     "@contentful/app-scripts": "^0.8.33",
     "@contentful/app-sdk": "^3.32.0",
+    "@contentful/f36-components": "^4.35.0",
+    "@contentful/f36-tokens": "^4.0.1",
     "@contentful/field-editor-single-line": "^0.13.1",
     "@contentful/field-editor-test-utils": "^0.9.0",
-    "@contentful/forma-36-fcss": "^0.3.0",
-    "@contentful/forma-36-react-components": "^3.78.2",
-    "@contentful/forma-36-tokens": "^0.10.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
@@ -28,6 +27,7 @@
     "start": "cross-env BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "tsc": "tsc",
     "eject": "react-scripts eject",
     "upload": "contentful-app-scripts upload --bundle-dir ./build",
     "upload-ci": "contentful-app-scripts upload --ci --bundle-dir ./build --organization-id $CONTENTFUL_ORG_ID --definition-id $CONTENTFUL_APP_DEF_ID --token $CONTENTFUL_ACCESS_TOKEN"
